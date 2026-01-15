@@ -48,13 +48,17 @@ user-management-api/
 
 ## ▶️ Running the Application (Local)
 
-### 1️⃣ Install dependencies
+Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
+
+Start the Server
 ```bash
 uvicorn app.main:app --reload
 ```
+
+Open Swagger UI
 ```browser
 http://127.0.0.1:8000/docs
 ```
@@ -70,5 +74,6 @@ POST	      /users	      Create a new user
 GET	        /users	      Retrieve all users
 PUT	        /users/{id}	  Update user details
 DELETE	    /users/{id}	  Delete a user
+
 
 
