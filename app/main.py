@@ -1,9 +1,13 @@
 from fastapi import FastAPI, HTTPException
 from app.models import User
 from app import crud
+from fastapi.responses import HTMLResponse
 
 app = FastAPI(title="User Management API")
 
+@app.get("/", response_class=HTMLResponse)
+def home():
+    return open("app/templates/index.html").read()
 
 @app.post("/users")
 def create_user(user: User):
