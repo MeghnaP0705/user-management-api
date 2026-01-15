@@ -52,8 +52,10 @@ user-management-api/
 ```bash
 pip install -r requirements.txt
 ```
+```bash
 uvicorn app.main:app --reload
 ```
+```browser
 http://127.0.0.1:8000/docs
 ```
 Use the interactive UI to test all API endpoints.
@@ -68,4 +70,5 @@ POST	      /users	      Create a new user
 GET	        /users	      Retrieve all users
 PUT	        /users/{id}	  Update user details
 DELETE	    /users/{id}	  Delete a user
+
 
