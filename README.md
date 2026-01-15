@@ -68,12 +68,14 @@ Use the interactive UI to test all API endpoints.
 
 ## 🔍 API Endpoints
 
+```
 Method	    Endpoint	    Description
 
 POST	      /users	      Create a new user
 GET	        /users	      Retrieve all users
 PUT	        /users/{id}	  Update user details
 DELETE	    /users/{id}	  Delete a user
+```
 
 
 
